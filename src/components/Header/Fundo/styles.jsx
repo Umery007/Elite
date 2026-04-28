@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FundoContainer = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   position: relative;
   overflow: hidden;
 `;

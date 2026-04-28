@@ -4,7 +4,8 @@ import styled from "styled-components";
 export const Headerdiv = styled.header`
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   max-width: 1320px;
   height: 60px;
@@ -14,11 +15,18 @@ export const Headerdiv = styled.header`
   justify-content: space-between;
 
   padding: 0 20px;
-  margin: 0;
 
   background: transparent;
-  border-bottom: none;
+  transition: 0.3s ease;
   z-index: 10;
+
+  /* 👇 QUANDO SCROLLAR */
+  &.scrolled {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
 `;
 
 export const Left = styled.div`
@@ -31,7 +39,25 @@ export const Right = styled.div`
   gap: 20px;
 `;
 
-export const Nav = styled.nav`
+export const NavLeft = styled.nav`
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  a {
+    font-family: "Hahmlet", serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+`;
+
+export const NavRight = styled.nav`
   display: flex;
   align-items: center;
   gap: 14px;
