@@ -26,6 +26,8 @@ export default function Header() {
     setMenuOpen((prev) => !prev);
   };
 
+  const pdfLink = "https://drive.google.com/file/d/15EfJ9hZ1ZwIbE5bVZZ1muryJX4zeX9gY/preview";
+
   return (
     <Headerdiv className={`${scrolled ? "scrolled" : ""}`}>
       <MenuButton onClick={toggleMenu}>
@@ -46,7 +48,10 @@ export default function Header() {
         <a href="#">Gallery</a>
         <a href="#">Contact</a>
         <a href="#">News</a>
-        <Button>Book now</Button>
+
+        <a href={pdfLink} target="_blank" rel="noopener noreferrer">
+          <Button>Book now</Button>
+        </a>
       </NavRight>
 
       <MobileMenu className={menuOpen ? "open" : ""}>
@@ -56,7 +61,10 @@ export default function Header() {
         <a href="#">Gallery</a>
         <a href="#">Contact</a>
         <a href="#">News</a>
-        <Button>Book now</Button>
+
+        <a href={pdfLink} target="_blank" rel="noopener noreferrer">
+          <Button>Book now</Button>
+        </a>
       </MobileMenu>
     </Headerdiv>
   );

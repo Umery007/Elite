@@ -6,16 +6,16 @@ import { Homediv } from "./styles";
 import cume1 from "../../assets/section-img/cume1.png";
 import cume2 from "../../assets/section-img/cume2.png";
 import cume3 from "../../assets/section-img/cume3.png";
+import fundo4 from "../../assets/section-img/fundo4.png";
 
 export default function Home() {
   return (
-    <Homediv>
+    <Homediv style={{ backgroundImage: `url(${fundo4})` }}>
       <Header />
       <Fundo />
       <Subheader />
 
-      {/* SEÇÕES */}
-      <div style={{ padding: "60px", background: "#f5e9d8" }}>
+      <div style={{ padding: "60px", background: "rgba(245, 233, 216, 0.85)" }}>
 
         <Section1
           title={`THE ORIGINAL L'ÉLITE FRANÇAISE, THE ONE AND ONLY`}
