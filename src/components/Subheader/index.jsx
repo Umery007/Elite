@@ -59,7 +59,7 @@ const Subheader = () => {
     <Subheaderdiv>
       <div className="marquee-container">
         <div className="marquee-text">
-          {pratos.join(" • ")}
+          {pratos.join(" ★ ")}
         </div>
       </div>
     </Subheaderdiv>

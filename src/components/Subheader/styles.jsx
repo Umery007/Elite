@@ -5,8 +5,8 @@ export const Subheaderdiv = styled.div`
  .marquee-container {
   width: 100%; /* Largura total */
   overflow: hidden; /* Esconde o conteúdo que sai da caixa */
-  background-color: #000000; /* Fundo estilo painel LED */
-  padding: 30px 0;
+  background-color: #161616; /* Fundo estilo painel LED */
+  padding: 10px 0;
 }
 
 .marquee-text {
@@ -15,7 +15,7 @@ export const Subheaderdiv = styled.div`
   color: #ffffff; /* Cor verde estilo LED */
   font-family: monospace;
   font-weight: bold;
-  font-size: 150px;
+  font-size: 20px;
   animation: marquee 120s linear infinite; /* Animação contínua */
 }
 

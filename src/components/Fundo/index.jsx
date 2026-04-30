@@ -1,5 +1,5 @@
 import { FundoContainer, Slide } from "./styles";
-import fundo from "../../../assets/fundo/fundo.png";
+import fundo from "../../assets/fundo/fundo.png";
 
 export default function Fundo() {
   return (
